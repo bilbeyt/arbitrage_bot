@@ -1,0 +1,3 @@
+[submodule "contracts"]
+	path = contracts
+	url = git@github.com:bilbeyt/arbitrage_bot_contracts.git
