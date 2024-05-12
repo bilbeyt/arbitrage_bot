@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  uniswap:
+    image: ghcr.io/bilbeyt/arbitrage_bot:test
+    volumes:
+      - ./src/.env:/go/.env
+      - ./src/data:/go/data
+    environment:
+      - ENV_FILE=/go/.env
+    restart: always
+volumes:
+  bot_db:
